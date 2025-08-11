@@ -1,0 +1,136 @@
+// 識別色
+$primary-yellow: #ffde0a;
+$primary-gray: #323333;
+$primary-beige: #f9f6f4;
+
+$accent-gray1: #b0b0b0;
+$accent-gray2: #d9d9d9;
+$accent-gray3: #e9e9e9;
+// ---------------------------------------------------------------------------------------------------
+.projects-page{
+    .projects-wrapper{
+        .project-tabs{
+            text-align: right;
+            margin-top: -2rem;
+            margin-bottom: 2rem;
+            a{
+                margin-left: 15px;
+                text-decoration: none;
+                color:$primary-gray;
+                // font-weight: bold;
+                font-size: 1.25rem;
+
+            }
+            a.active{
+                color:$primary-yellow;
+                font-weight: bold;
+                font-size: 1.75rem;
+            }
+        }
+        .projects-cards{
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 3rem;
+            row-gap:6rem;
+            column-gap: 3rem;
+            .card{
+                cursor: pointer;
+                text-transform: unset;
+                font-weight: normal;
+                text-transform:none;
+                .project-pic{
+                    border-radius: 15px;
+                    overflow: hidden;
+                }
+                h4{
+                    margin: 0;
+                    margin-top: 1.5rem;
+                    font-size: 1.25rem;
+                    font-weight: 600;
+                    span{
+                        margin: 0 10px;
+                    }
+                }
+                h6{
+                    .dot{
+                        display: inline-block;
+                        width: 8px;
+                        height: 8px;
+                        border-radius: 8px;
+                        margin-right: 10px;
+                        background-color: $primary-yellow;
+                    }
+                    margin: 0;
+                    margin-top: 0.25rem;
+                    font-size: .75rem;
+                    font-weight: normal;
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                }
+                .more-btn{
+                    width:150px;
+                }
+            }
+        }
+        .navigation{
+            margin: 3rem auto;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 25px;
+            span{
+                cursor: pointer;
+            }
+            .disabled{
+                cursor: unset;
+                svg{
+                    opacity: 0.5;
+                }
+            }
+            .num{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap:10px;
+                span{
+                    font-weight: bold;
+                    padding: 8px 18px;
+
+                }
+                span.active{
+                    border-radius: 3px;
+                    color: #fff;
+                    background-color: $primary-yellow;
+                }
+            }
+        }
+    }
+}
+// ==================================
+// 手機版樣式
+// ==================================
+.mobile-view {
+    .projects-page{
+        .projects-wrapper {
+            .project-tabs{
+                margin-top: 0;
+                a{
+                    font-size: 1rem;
+                }
+                
+            }
+            .projects-cards{
+                grid-template-columns:repeat(1, 1fr)
+            }
+            .card .more-btn{
+                width: 40%;
+                padding: 1rem;
+                .text{
+                    font-weight: normal;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,150 @@
+.projects-page .projects-wrapper .project-tabs {
+  text-align: right;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
+}
+
+.projects-page .projects-wrapper .project-tabs a {
+  margin-left: 15px;
+  text-decoration: none;
+  color: #323333;
+  font-size: 1.25rem;
+}
+
+.projects-page .projects-wrapper .project-tabs a.active {
+  color: #ffde0a;
+  font-weight: bold;
+  font-size: 1.75rem;
+}
+
+.projects-page .projects-wrapper .projects-cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  row-gap: 6rem;
+  -webkit-column-gap: 3rem;
+          column-gap: 3rem;
+}
+
+.projects-page .projects-wrapper .projects-cards .card {
+  cursor: pointer;
+  text-transform: unset;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.projects-page .projects-wrapper .projects-cards .card .project-pic {
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.projects-page .projects-wrapper .projects-cards .card h4 {
+  margin: 0;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.projects-page .projects-wrapper .projects-cards .card h4 span {
+  margin: 0 10px;
+}
+
+.projects-page .projects-wrapper .projects-cards .card h6 {
+  margin: 0;
+  margin-top: 0.25rem;
+  font-size: .75rem;
+  font-weight: normal;
+}
+
+.projects-page .projects-wrapper .projects-cards .card h6 .dot {
+  display: inline-block;
+  width: 8px;
+  height: 8px;
+  border-radius: 8px;
+  margin-right: 10px;
+  background-color: #ffde0a;
+}
+
+.projects-page .projects-wrapper .projects-cards .card img {
+  width: 100%;
+  height: 100%;
+}
+
+.projects-page .projects-wrapper .projects-cards .card .more-btn {
+  width: 150px;
+}
+
+.projects-page .projects-wrapper .navigation {
+  margin: 3rem auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 25px;
+}
+
+.projects-page .projects-wrapper .navigation span {
+  cursor: pointer;
+}
+
+.projects-page .projects-wrapper .navigation .disabled {
+  cursor: unset;
+}
+
+.projects-page .projects-wrapper .navigation .disabled svg {
+  opacity: 0.5;
+}
+
+.projects-page .projects-wrapper .navigation .num {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 10px;
+}
+
+.projects-page .projects-wrapper .navigation .num span {
+  font-weight: bold;
+  padding: 8px 18px;
+}
+
+.projects-page .projects-wrapper .navigation .num span.active {
+  border-radius: 3px;
+  color: #fff;
+  background-color: #ffde0a;
+}
+
+.mobile-view .projects-page .projects-wrapper .project-tabs {
+  margin-top: 0;
+}
+
+.mobile-view .projects-page .projects-wrapper .project-tabs a {
+  font-size: 1rem;
+}
+
+.mobile-view .projects-page .projects-wrapper .projects-cards {
+  -ms-grid-columns: (1fr)[1];
+      grid-template-columns: repeat(1, 1fr);
+}
+
+.mobile-view .projects-page .projects-wrapper .card .more-btn {
+  width: 40%;
+  padding: 1rem;
+}
+
+.mobile-view .projects-page .projects-wrapper .card .more-btn .text {
+  font-weight: normal;
+}
+/*# sourceMappingURL=projects.css.map */

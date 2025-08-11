@@ -1,0 +1,25 @@
+@charset "UTF-8";
+.terms-page .terms-wrapper {
+  color: #323333;
+  margin-top: 3rem;
+  letter-spacing: 1px;
+}
+
+.terms-page .terms-wrapper h4 {
+  margin: 0;
+}
+
+.terms-page .terms-wrapper ol {
+  padding-left: 20px;
+}
+
+.terms-page .terms-wrapper ol li {
+  list-style-type: decimal;
+  /* 顯示數字編號 */
+}
+
+.terms-page .terms-wrapper ol ol li {
+  list-style-type: lower-alpha;
+  /* 子清單使用 a, b, c... */
+}
+/*# sourceMappingURL=terms.css.map */

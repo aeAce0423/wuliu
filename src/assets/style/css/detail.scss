@@ -1,0 +1,251 @@
+// 識別色
+$primary-yellow: #ffde0a;
+$primary-gray: #323333;
+$primary-beige: #f9f6f4;
+
+$accent-gray1: #b0b0b0;
+$accent-gray2: #d9d9d9;
+$accent-gray3: #e9e9e9;
+
+// ---------------------------------------------------------------------------------------------------
+.detail-page {
+    .banner {
+        background-color: $primary-beige;
+        max-width: 100%;
+        max-height: 720px;
+        aspect-ratio: 5 / 2;
+
+        img {
+            width: 100%;
+            object-fit: cover;
+        }
+    }
+
+    .detail-wrapper {
+        .title {
+            color: $primary-gray;
+        }
+
+        .tags {
+            .dot {
+                display: inline-block;
+                width: 8px;
+                height: 8px;
+                border-radius: 8px;
+                margin-right: 10px;
+                background-color: $primary-yellow;
+            }
+        }
+
+        h6 {
+            font-weight: normal;
+            font-size: 1rem;
+            margin: 0;
+            margin-bottom: 3rem;
+
+            span {
+                margin: 0 10px;
+            }
+        }
+
+        h4 {
+            font-family: "Noto Sans TC";
+            margin: 1rem 0;
+            font-size: 2rem;
+            font-weight: 500;
+            letter-spacing: 1.2px;
+            color: $primary-gray;
+
+        }
+
+        ul {
+            margin: 2rem 0;
+            padding: 0;
+
+            li {
+                font-weight: bold;
+            }
+        }
+
+        p {
+            opacity: 1;
+            text-transform: none;
+        }
+
+        .detail-photo {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 3rem;
+
+            img {
+                width: 100%;
+                object-fit: contain;
+            }
+        }
+
+        .page-switch {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            gap: 6rem;
+            margin-top: 3rem;
+
+            .switch-btn {
+                padding: 1.25rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border-radius: 8px;
+                border: solid 1px $accent-gray1;
+                position: relative;
+                cursor: pointer;
+
+                .icon {
+                    display: inline-block;
+                    min-width: 40px;
+                    height: 40px;
+                    border-radius: 9999px;
+                    background-color: $accent-gray1;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .text {
+                    width: 75%;
+                    color: $primary-gray;
+                }
+            }
+
+            .last-page::after {
+                content: '上一篇文章';
+                position: absolute;
+                left: 15px;
+                top: -2rem;
+                color: $accent-gray1;
+            }
+
+            .next-page::after {
+                content: '下一篇文章';
+                position: absolute;
+                right: 15px;
+                top: -2rem;
+                color: $accent-gray1;
+            }
+
+            .divide {
+                width: 1px;
+                height: auto;
+                background-color: $accent-gray1;
+            }
+
+        }
+    }
+
+    .detail-wrapper.blog-wrapper {
+        hr{
+            margin: 2rem 0;
+        }
+        .detail-photo img{
+            border-radius: 10px;
+        }
+
+        .page-switch {
+            display: grid;
+            grid-template-columns: 2fr 1px 2fr; // 中間那格就是 divide
+            gap: 6rem;
+            margin-top: 3rem;
+            align-items: stretch;
+
+            .switch-btn {
+                border: solid 1px $primary-gray;
+
+                .text {
+                    font-weight: 600;
+                    color: $primary-gray;
+
+                }
+            }
+
+            .last-page {
+                .switch-btn {
+                    .text {
+                        text-align: right;
+                    }
+                }
+            }
+
+            .last-page,
+            .next-page {
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+
+                h5 {
+                    color: $primary-gray;
+                    font-size: 1rem;
+                    overflow: hidden;
+                    overflow-wrap: break-word;
+                    text-overflow: ellipsis;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    margin-bottom: 2rem;
+                    opacity: 0.8;
+                }
+            }
+
+            .divide {
+                background-color: $accent-gray1;
+                width: 100%;
+                align-self: stretch;
+            }
+
+            .last-page::after {
+                content: '';
+            }
+
+            .next-page::after {
+                content: '';
+            }
+
+        }
+    }
+
+    #project {
+        .subject {
+            align-self: flex-start;
+
+            .title {
+                color: $primary-gray;
+            }
+
+            .subtitle {
+                text-align: left;
+            }
+        }
+    }
+}
+
+.media-page.detail-page {
+    p {
+        font-size: 1rem;
+    }
+}
+
+// ==================================
+// 手機版樣式
+// ==================================
+.mobile-view {
+    .detail-page{
+        section{
+            padding-top: 1rem;
+        }
+        .detail-wrapper{
+            .title{
+                font-size: 2rem;
+            }
+        }
+    }
+}

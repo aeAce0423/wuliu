@@ -1,0 +1,34 @@
+// 識別色
+$primary-yellow: #ffde0a;
+$primary-gray: #323333;
+$primary-beige: #f9f6f4;
+
+$accent-gray1: #b0b0b0;
+$accent-gray2: #d9d9d9;
+$accent-gray3: #e9e9e9;
+
+// ---------------------------------------------------------------------------------------------------
+.terms-page {
+    .terms-wrapper {
+        color: $primary-gray;
+        margin-top: 3rem;
+        letter-spacing: 1px;
+
+        h4{
+            margin: 0;
+        }
+        ol{
+            padding-left: 20px;
+        }
+
+        ol li{
+            list-style-type: decimal;
+            /* 顯示數字編號 */
+        }
+
+        ol ol li{
+            list-style-type: lower-alpha;
+            /* 子清單使用 a, b, c... */
+        }
+    }
+}

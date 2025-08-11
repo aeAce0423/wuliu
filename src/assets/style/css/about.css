@@ -1,0 +1,295 @@
+.about-page .info-wrapper {
+  padding: 3rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 4rem;
+}
+
+.about-page .info-wrapper .about-img {
+  width: 45%;
+  background-color: #fff;
+  background-image: url(/src/assets/style/image/about/brand.png);
+  background-size: cover;
+  border-radius: 25px;
+  aspect-ratio: 258 / 209;
+}
+
+.about-page .info-wrapper .about-content img.aerial-view {
+  height: 85px;
+  border-radius: 5px;
+}
+
+.about-page .info-wrapper .about-content h1 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  letter-spacing: 2px;
+  margin: 0;
+}
+
+.about-page .info-wrapper .about-content p {
+  opacity: 0.6;
+}
+
+.about-page .info-wrapper .about-content .more-btn {
+  width: 70%;
+}
+
+.about-page .intro-wrapper .intro-top {
+  padding: 3rem;
+}
+
+.about-page .intro-wrapper .intro-top .logo {
+  width: 100px;
+  height: 100px;
+  background-image: url(/src/assets/style/image/about/logo.svg);
+  background-size: contain;
+  margin: auto;
+  margin-bottom: 2rem;
+}
+
+.about-page .intro-wrapper .intro-top h4 {
+  margin: 0;
+  font-weight: normal;
+  text-align: center;
+  color: #323333;
+  line-height: 2;
+}
+
+.about-page .intro-wrapper .intro-top h5 {
+  margin: 0;
+  margin-top: 2rem;
+  text-align: center;
+  color: #323333;
+  font-weight: normal;
+  opacity: 0.5;
+}
+
+.about-page .intro-wrapper .intro-bottom .slide-photo {
+  width: 100%;
+  overflow: hidden;
+}
+
+.about-page .intro-wrapper .intro-bottom .slide-photo ul {
+  margin: 0;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+  gap: 2rem;
+}
+
+.about-page .intro-wrapper .intro-bottom .slide-photo ul li img {
+  border-radius: 15px;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+
+.about-page .intro-wrapper .intro-bottom .slide-photo ul li:nth-child(4n+1) {
+  min-width: 243px;
+  aspect-ratio: 293 / 326;
+}
+
+.about-page .intro-wrapper .intro-bottom .slide-photo ul li:nth-child(4n+2) {
+  min-width: 330px;
+  aspect-ratio: 380 / 255;
+}
+
+.about-page .intro-wrapper .intro-bottom .slide-photo ul li:nth-child(4n+3) {
+  min-width: 243px;
+  aspect-ratio: 293 / 225;
+}
+
+.about-page .intro-wrapper .intro-bottom .slide-photo ul li:nth-child(4n) {
+  min-width: 331px;
+  aspect-ratio: 381 / 294;
+}
+
+.about-page .milestones-wrapper {
+  padding: 3rem;
+  background-color: #e9e9e9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.about-page .milestones-wrapper .title {
+  font-size: 3rem;
+  color: #323333;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.about-page .milestones-wrapper .subtitle {
+  font-size: 1.25rem;
+  color: #323333;
+  font-weight: normal;
+}
+
+.about-page .milestones-wrapper ul {
+  padding: 0;
+  margin: 0;
+  margin-top: 2rem;
+  color: #323333;
+}
+
+.about-page .milestones-wrapper ul li {
+  margin: 10px 0;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 0.5fr 6fr;
+      grid-template-columns: 1fr 0.5fr 6fr;
+}
+
+.about-page .milestones-wrapper ul li span:nth-last-child(1) {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+.about-page .milestones-wrapper ul li .divide {
+  margin: 0 5px;
+}
+
+.about-page .teams-wrapper {
+  margin-top: 5rem;
+}
+
+.about-page .teams-wrapper p {
+  line-height: 2;
+  margin-bottom: 8rem;
+}
+
+.about-page .teams-wrapper .team-cards {
+  max-width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+}
+
+.about-page .teams-wrapper .team-cards .card {
+  text-transform: unset;
+  font-weight: normal;
+  text-transform: none;
+}
+
+.about-page .teams-wrapper .team-cards .card h4 {
+  margin: 0;
+  margin-top: 1.5rem;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.about-page .teams-wrapper .team-cards .card h6 {
+  margin: 0;
+  margin-top: 0.25rem;
+  font-size: .75rem;
+  font-weight: normal;
+  color: #b0b0b0;
+}
+
+.about-page .teams-wrapper .team-cards .card img {
+  width: 100%;
+  height: 100%;
+}
+
+.about-page .teams-wrapper .more-btn {
+  width: 340px;
+  margin: 3rem auto;
+}
+
+.mobile-view .about-page .info-wrapper {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.mobile-view .about-page .info-wrapper .about-img {
+  width: 100%;
+}
+
+.mobile-view .about-page .info-wrapper .about-content img.aerial-view {
+  height: 65px;
+}
+
+.mobile-view .about-page .info-wrapper .about-content h1 {
+  font-size: 3rem;
+}
+
+.mobile-view .about-page .info-wrapper .about-content .more-btn {
+  width: 100%;
+}
+
+.mobile-view .about-page .intro-wrapper .intro-top {
+  padding: 0;
+  padding-bottom: 2rem;
+}
+
+.mobile-view .about-page .milestones-wrapper .title {
+  font-size: 2rem;
+}
+
+.mobile-view .about-page .teams-wrapper .row {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.mobile-view .about-page .teams-wrapper .row .title {
+  font-size: 2rem;
+}
+
+.mobile-view .about-page .teams-wrapper .row .subtitle {
+  text-align: center;
+}
+
+.mobile-view .about-page .teams-wrapper p {
+  text-align: center;
+}
+
+.mobile-view .about-page .teams-wrapper .team-cards {
+  -ms-grid-columns: (1fr)[2];
+      grid-template-columns: repeat(2, 1fr);
+  gap: .75rem;
+}
+
+.mobile-view .about-page .teams-wrapper .team-cards .card img {
+  border-radius: 15px;
+}
+
+.mobile-view .about-page .teams-wrapper .team-cards .card h4 {
+  margin: 0;
+  font-weight: normal;
+}
+
+.mobile-view .about-page .teams-wrapper .more-btn {
+  width: 100%;
+}
+/*# sourceMappingURL=about.css.map */
