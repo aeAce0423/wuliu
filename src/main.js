@@ -1,5 +1,5 @@
-// // 共用樣式
-// import './assets/style/css/reset.css';
+// 共用樣式
+import './assets/style/css/reset.css';
 import './assets/style/css/style.css';
 // 各分頁樣式
 import './assets/style/css/about.css';

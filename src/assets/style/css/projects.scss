@@ -19,12 +19,18 @@ $accent-gray3: #e9e9e9;
                 color:$primary-gray;
                 // font-weight: bold;
                 font-size: 1.25rem;
-
+                transition: 0.5s;
             }
+
             a.active{
                 color:$primary-yellow;
                 font-weight: bold;
                 font-size: 1.75rem;
+            }
+            
+            a:hover{
+                color:$primary-yellow;
+                font-weight: bold;
             }
         }
         .projects-cards{

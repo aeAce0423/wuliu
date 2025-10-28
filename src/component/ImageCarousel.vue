@@ -2,14 +2,24 @@
 import { Swiper, SwiperSlide } from 'swiper/vue'
 import 'swiper/css'
 
+// 引入圖片
+import carousel1 from '@/assets/style/image/about/carousel1.png'
+import carousel2 from '@/assets/style/image/about/carousel2.gif'
+import carousel3 from '@/assets/style/image/about/carousel3.gif'
+import carousel4 from '@/assets/style/image/about/carousel4.png'
+import carousel5 from '@/assets/style/image/about/carousel5.gif'
+import carousel6 from '@/assets/style/image/about/carousel6.png'
+import carousel7 from '@/assets/style/image/about/carousel7.png'
+
+// 圖片數組
 const images = [
-  '/src/assets/style/image/about/carousel1.png',
-  '/src/assets/style/image/about/carousel2.gif',
-  '/src/assets/style/image/about/carousel3.gif',
-  '/src/assets/style/image/about/carousel4.png',
-  '/src/assets/style/image/about/carousel5.gif',
-  '/src/assets/style/image/about/carousel6.png',
-  '/src/assets/style/image/about/carousel7.png'
+  carousel1,
+  carousel2,
+  carousel3,
+  carousel4,
+  carousel5,
+  carousel6,
+  carousel7
 ]
 
 // 根據你的 nth-child 規則決定每張圖片的尺寸

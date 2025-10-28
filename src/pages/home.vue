@@ -3,10 +3,6 @@ import { useRouter } from 'vue-router';
 import { ref, onMounted, nextTick, watch, reactive, computed } from 'vue';
 import Header from '../component/Header.vue';
 import Footer from '../component/Footer.vue';
-import product1 from '../../src/assets/style/image/product/product1.png';
-import product2 from '../../src/assets/style/image/product/product2.png';
-import product3 from '../../src/assets/style/image/product/product3.png';
-import product4 from '../../src/assets/style/image/product/product4.png';
 
 const route = useRouter();
 const activeIndex = ref(0);
@@ -21,15 +17,22 @@ const hoverBgStyle = reactive({
 });
 
 const getSrcByIndex = (index) => {
-  if (index === 1 || index === 2) return `src/assets/style/image/video/service${index}.png`;
-  return `src/assets/style/image/video/service${index}.mp4`;
+  if (index === 1 || index === 2) {
+    return new URL(`../assets/style/image/video/service${index}.png`, import.meta.url).href;
+  }
+  return new URL(`../assets/style/image/video/service${index}.mp4`, import.meta.url).href;
 };
 
+import productUrl1 from '@/assets/style/image/product/product1.png';
+import productUrl2 from '@/assets/style/image/product/product2.png';
+import productUrl3 from '@/assets/style/image/product/product3.png';
+import productUrl4 from '@/assets/style/image/product/product4.png';
+
 const projectData = [
-  { name: '商品企劃 | 茶馬司 加大防潑水野餐墊', tags: ['#品牌建置', '#設計專案', '#數位營銷'], imgSrc: product1 },
-  { name: '品牌CI建置 | TEAMARS茶馬司訪山茶店', tags: ['#品牌建置', '#設計專案', '#數位營銷'], imgSrc: product2 },
-  { name: '商品企劃 | Ms.祕食 X 茶馬司限量星月中秋禮盒', tags: ['#品牌建置', '#設計專案', '#數位營銷'], imgSrc: product3 },
-  { name: '活動規劃 | 茶馬司 七夕情人節活動', tags: ['#品牌建置', '#設計專案', '#數位營銷'], imgSrc: product4 }
+  { name: '商品企劃 | 茶馬司 加大防潑水野餐墊', tags: ['#品牌建置', '#設計專案', '#數位營銷'], imgSrc: productUrl1 },
+  { name: '品牌CI建置 | TEAMARS茶馬司訪山茶店', tags: ['#品牌建置', '#設計專案', '#數位營銷'], imgSrc: productUrl2 },
+  { name: '商品企劃 | Ms.祕食 X 茶馬司限量星月中秋禮盒', tags: ['#品牌建置', '#設計專案', '#數位營銷'], imgSrc: productUrl3 },
+  { name: '活動規劃 | 茶馬司 七夕情人節活動', tags: ['#品牌建置', '#設計專案', '#數位營銷'], imgSrc: productUrl4 }
 ]
 
 const handleMouseEnter = function (index) {
@@ -49,7 +52,7 @@ const handleMouseEnter = function (index) {
   });
 }
 const projectIndex = ref(0)
-const imageHeight = 400 // 圖片固定高度（px）
+const imageHeight = 700 // 圖片固定高度（px）
 
 const imgListStyle = computed(() => ({
   transform: `translateY(-${projectIndex.value * imageHeight}px)`
@@ -81,7 +84,7 @@ watch(activeIndex, async (newIndex) => {
 <template>
   <Header />
   <section id="intro">
-    <Header />
+    <!-- <Header /> -->
     <video class="intro-video" autoplay muted loop width="100%">
       <source src=".././assets/style/image/video/banner.mp4" type="video/mp4" />
     </video>

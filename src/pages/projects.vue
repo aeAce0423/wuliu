@@ -3,6 +3,7 @@ import { useRouter } from "vue-router";
 const route = useRouter();
 import Header from '../component/Header.vue';
 import Footer from '../component/Footer.vue';
+import Breadcrumb from '../component/Breadcrumb.vue';
 </script>
 
 <template>
@@ -16,15 +17,7 @@ import Footer from '../component/Footer.vue';
                     <div class="subtitle">案例介紹</div>
                 </span>
             </div>
-            <div class="bread-crumbs">
-                <span>首頁 </span>
-                <svg xmlns="http://www.w3.org/2000/svg" width="15" height="14" viewBox="0 0 15 14" fill="none">
-                    <path opacity="0.3"
-                        d="M4.74675 11.4801C4.34986 11.1275 4.35095 10.5071 4.74908 10.1559L7.4774 7.7491C7.92837 7.35128 7.92875 6.64828 7.47822 6.24998L4.748 3.83628C4.35077 3.4851 4.3511 2.86528 4.74872 2.51453C5.08199 2.22053 5.58198 2.22053 5.91525 2.51453L10.1499 6.25008C10.6012 6.64819 10.6012 7.35181 10.1499 7.74992L5.91903 11.4821C5.58389 11.7778 5.08085 11.7769 4.74675 11.4801Z"
-                        fill="#323333" />
-                </svg>
-                <span> 案例介紹</span>
-            </div>
+            <Breadcrumb />
             <p>Design is our cultural signal to the universe</p>
             <div class="projects-wrapper">
                 <div class="project-tabs">
