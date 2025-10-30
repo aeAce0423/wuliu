@@ -25,7 +25,7 @@ function scrollToTop() {
 .float-right {
     position: fixed;
     right: 0;
-    bottom: 0;
+    bottom: 20px;
     z-index: 4;
     display: flex;
     flex-direction: column;
@@ -36,18 +36,23 @@ function scrollToTop() {
 .gotop {
     margin-bottom: 1rem;
     cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
 }
 
 .text {
-    font-size: 1rem;
     text-align: center;
     font-style: italic;
     color: #b0b0b0;
+    font-size: 20px;
 }
 
 .icon {
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: 43px;
 }
 
 img {
@@ -58,15 +63,19 @@ img {
 
 .contact {
     writing-mode: vertical-rl;
-    padding: 1.75rem .5rem;
-    background-color: #b0b0b0;
     color: #fff;
-    border-radius: 5px 0px 0px 5px;
-    font-size: .75rem;
+    font-size: 18px;
 }
 
 a {
     text-decoration: unset;
+    width: 53px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #b0b0b0;
+    border-radius: 10px 0px 0px 10px;
 }
 </style>
 <template>
