@@ -160,6 +160,7 @@ watch(isOpen, (newVal) => {
           All Rights Reserved.
         </p>
       </div>
+      <button class="close-btn" @click="toggleMenu">✕</button>
     </div>
   </transition>
 </template>

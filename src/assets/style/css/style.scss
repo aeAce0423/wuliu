@@ -308,6 +308,7 @@ li {
         color: black;
         font-size: 20px;
         cursor: pointer;
+        display: none;
     }
 }
 
@@ -1533,6 +1534,9 @@ section {
 
         .nav-content {
             display: none;
+        }
+        .close-btn{
+            display: block;
         }
     }
 

@@ -58,6 +58,12 @@ const imgListStyle = computed(() => ({
   transform: `translateY(-${projectIndex.value * imageHeight}px)`
 }))
 
+const scrollToInfo = function() {
+  const infoSection = document.getElementById("info");
+  if (infoSection) {
+    infoSection.scrollIntoView({ behavior: "smooth" });
+  }
+}
 
 watch(activeIndex, async (newIndex) => {
   const src = getSrcByIndex(newIndex);
@@ -91,7 +97,7 @@ watch(activeIndex, async (newIndex) => {
     <div class="intro-text">
       <h1>bringing nostalgia and creativity to the next level.</h1>
     </div>
-    <a href="#info" class="scroll">
+    <a href="javascript:void(0);" @click="scrollToInfo" class="scroll">
       <img src=".././assets/style/image/index/intro-scoll.svg" alt="" />
       <h4>Scroll</h4>
     </a>
