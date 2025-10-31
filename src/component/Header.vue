@@ -141,7 +141,7 @@ watch(isOpen, (newVal) => {
             active: hoveredIndex === index,
             faded: hoveredIndex !== null && hoveredIndex !== index
           }">
-          <router-link :to="item.link"><span class="nav-num">{{ item.num }}</span>{{ item.label }}<span class="name">{{
+          <router-link :to="item.link"><span class="nav-num">{{ item.num }}</span><span class="label">{{ item.label }}</span><span class="name">{{
             item.name }}</span></router-link>
         </li>
       </ul>
