@@ -52,7 +52,7 @@ const handleMouseEnter = function (index) {
   });
 }
 const projectIndex = ref(0)
-const imageHeight = 700 // 圖片固定高度（px）
+let imageHeight = 700 // 圖片固定高度（px）
 
 const imgListStyle = computed(() => ({
   transform: `translateY(-${projectIndex.value * imageHeight}px)`
@@ -83,6 +83,9 @@ watch(activeIndex, async (newIndex) => {
       console.warn('影片播放錯誤:', err);
     }
   }
+});
+onMounted(() => {
+  imageHeight = document.querySelector('#project .content .project-img').getBoundingClientRect().height;
 });
 </script>
 
