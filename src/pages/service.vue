@@ -109,8 +109,8 @@ watch(activeIndex, async (newIndex) => {
                                 <div class="more-btn">
                                     <div class="text">品牌精選案例</div>
                                     <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15"
-                                            fill="none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15"
+                                            viewBox="0 0 12 15" fill="none">
                                             <path
                                                 d="M9.92469 6.65123C10.4967 7.08013 10.4967 7.92034 9.92469 8.34923L2.92798 13.5954C2.20465 14.1378 1.15698 13.6355 1.15698 12.7464V2.25407C1.15698 1.36495 2.20465 0.862706 2.92798 1.40506L9.92469 6.65123Z"
                                                 fill="#B0B0B0" />
@@ -134,8 +134,8 @@ watch(activeIndex, async (newIndex) => {
                                 <div class="more-btn">
                                     <div class="text">設計精選案例</div>
                                     <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15"
-                                            fill="none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15"
+                                            viewBox="0 0 12 15" fill="none">
                                             <path
                                                 d="M9.92469 6.65123C10.4967 7.08013 10.4967 7.92034 9.92469 8.34923L2.92798 13.5954C2.20465 14.1378 1.15698 13.6355 1.15698 12.7464V2.25407C1.15698 1.36495 2.20465 0.862706 2.92798 1.40506L9.92469 6.65123Z"
                                                 fill="#B0B0B0" />
@@ -146,31 +146,30 @@ watch(activeIndex, async (newIndex) => {
                         </div>
                     </router-link>
                     <router-link to="/service" custom v-slot="{ navigate }">
-                        <div class="card" @mouseenter="activeIndex = 3" @click="navigate">
-                            <div class="card-l">
-                                <div class="row">
+                    <div class="card" @mouseenter="activeIndex = 3" @click="navigate">
+                        <div class="card-l">
+                            <div class="row">
 
-                                    <div class="title">Events</div>
-                                    <div class="subtitle">活動專案</div>
-                                </div>
-                            </div>
-                            <div class="card-r">
-                                <p>將設計概念延伸至各個品牌接觸點，讓消費者一眼就能認出您的品牌，繼而創造價值和成長。</p>
-                                <div class="more-btn">
-                                    <div class="text">活動精選案例</div>
-                                    <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15"
-                                            fill="none">
-                                            <path
-                                                d="M9.92469 6.65123C10.4967 7.08013 10.4967 7.92034 9.92469 8.34923L2.92798 13.5954C2.20465 14.1378 1.15698 13.6355 1.15698 12.7464V2.25407C1.15698 1.36495 2.20465 0.862706 2.92798 1.40506L9.92469 6.65123Z"
-                                                fill="#B0B0B0" />
-                                        </svg>
-                                    </div>
-                                </div>
-
+                                <div class="title">Events</div>
+                                <div class="subtitle">活動專案</div>
                             </div>
                         </div>
-                    </router-link>
+                        <div class="card-r">
+                            <p>將設計概念延伸至各個品牌接觸點，讓消費者一眼就能認出您的品牌，繼而創造價值和成長。</p>
+                            <div class="more-btn">
+                                <div class="text">活動精選案例</div>
+                                <div class="icon">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15"
+                                        fill="none">
+                                        <path
+                                            d="M9.92469 6.65123C10.4967 7.08013 10.4967 7.92034 9.92469 8.34923L2.92798 13.5954C2.20465 14.1378 1.15698 13.6355 1.15698 12.7464V2.25407C1.15698 1.36495 2.20465 0.862706 2.92798 1.40506L9.92469 6.65123Z"
+                                            fill="#B0B0B0" />
+                                    </svg>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div></router-link>
                     <router-link to="/service" custom v-slot="{ navigate }">
                         <div class="card" @mouseenter="activeIndex = 4" @click="navigate">
                             <div class="card-l">
@@ -185,8 +184,8 @@ watch(activeIndex, async (newIndex) => {
                                 <div class="more-btn">
                                     <div class="text">行銷精選案例</div>
                                     <div class="icon">
-                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15" viewBox="0 0 12 15"
-                                            fill="none">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="12" height="15"
+                                            viewBox="0 0 12 15" fill="none">
                                             <path
                                                 d="M9.92469 6.65123C10.4967 7.08013 10.4967 7.92034 9.92469 8.34923L2.92798 13.5954C2.20465 14.1378 1.15698 13.6355 1.15698 12.7464V2.25407C1.15698 1.36495 2.20465 0.862706 2.92798 1.40506L9.92469 6.65123Z"
                                                 fill="#B0B0B0" />

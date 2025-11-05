@@ -4,22 +4,21 @@
   margin-top: 3rem;
   letter-spacing: 1px;
 }
-
 .terms-page .terms-wrapper h4 {
-  margin: 0;
+  margin: 15px 0;
 }
-
 .terms-page .terms-wrapper ol {
   padding-left: 20px;
 }
-
+.terms-page .terms-wrapper li {
+  line-height: 2rem;
+}
 .terms-page .terms-wrapper ol li {
   list-style-type: decimal;
+  line-height: 2.2rem;
   /* 顯示數字編號 */
 }
-
 .terms-page .terms-wrapper ol ol li {
   list-style-type: lower-alpha;
   /* 子清單使用 a, b, c... */
-}
-/*# sourceMappingURL=terms.css.map */
+}/*# sourceMappingURL=terms.css.map */

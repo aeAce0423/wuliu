@@ -146,9 +146,14 @@ watch(isOpen, (newVal) => {
         </li>
       </ul>
       <div class="nav-content">
-        <video autoplay muted loop playsinline>
-          <source src=".././assets/style/image/video/footer.mp4" type="video/mp4" />
-        </video>
+         <div class="video-wrap">
+          <video autoplay muted loop playsinline>
+            <source
+              src=".././assets/style/image/video/footer.mp4"
+              type="video/mp4"
+            />
+          </video>
+        </div>
         <ul>
           <div class="nav-text">what we do</div>
           <li>branding</li>

@@ -65,6 +65,7 @@ const scrollToInfo = function() {
   }
 }
 
+
 watch(activeIndex, async (newIndex) => {
   const src = getSrcByIndex(newIndex);
 
@@ -97,8 +98,16 @@ onMounted(() => {
     <video class="intro-video" autoplay muted loop width="100%">
       <source src=".././assets/style/image/video/banner.mp4" type="video/mp4" />
     </video>
-    <div class="intro-text">
-      <h1>bringing nostalgia and creativity to the next level.</h1>
+   <div class="intro-text">
+     <h1>WHERE NOSTALGIA  MEETS INNOVATION</h1>
+
+     <h2>舊螢幕，新視界<br>
+五六文創的時代對話</h2>
+
+
+
+
+
     </div>
     <a href="javascript:void(0);" @click="scrollToInfo" class="scroll">
       <img src=".././assets/style/image/index/intro-scoll.svg" alt="" />

@@ -18,28 +18,28 @@ import Breadcrumb from '@/component/Breadcrumb.vue'
                 </span>
             </div>
             <Breadcrumb />
-            <div class="contact-wrapper">
+             <div class="contact-wrapper">
                 <li>
-                    <label for="name">姓名 Name *</label>
+                    <label for="name">姓名 Name <span>*</span></label>
                     <input type="text" id="name">
                 </li>
                 <li>
-                    <label for="company">公司 Company *</label>
+                    <label for="company">公司 Company <span>*</span></label>
                     <input type="text" id="company">
                 </li>
                 <li>
-                    <label for="job">職稱 Job title *</label>
+                    <label for="job">職稱 Job title <span>*</span></label>
                     <input type="text" id="job">
                 </li>
                 <li>
-                    <label for="country">國家 Country *</label>
+                    <label for="country">國家 Country <span>*</span></label>
                     <select name="country" id="country">
                         <option value="台灣" selected>台灣</option>
                         <option value="日本">日本</option>
                     </select>
                 </li>
                 <li>
-                    <label for="area">地區 Area *</label>
+                    <label for="area">地區 Area <span>*</span></label>
                     <select name="area" id="area">
                         <option value="台北">台北</option>
                         <option value="台中">台中</option>
@@ -47,32 +47,37 @@ import Breadcrumb from '@/component/Breadcrumb.vue'
                     </select>
                 </li>
                 <li>
-                    <label for="phone">聯絡電話 Tel NO *</label>
+                    <label for="phone">聯絡電話 Tel NO <span>*</span></label>
                     <input type="text" id="phone">
                 </li>
                 <li>
-                    <label for="email">電子郵件 E-mail *</label>
+                    <label for="email">電子郵件 E-mail <span>*</span></label>
                     <input type="text" id="email">
                 </li>
                 <li>
-                    <label for="line">Line ID *</label>
+                    <label for="line">Line ID <span>*</span></label>
                     <input type="text" id="line">
                 </li>
                 <li class="content">
-                    <label for="content">需求描述 Content *</label>
+                    <label for="content">需求描述 Content <span>*</span></label>
                     <textarea name="content" id="content"></textarea>
                 </li>
-                <div class="row">
-                    <li>
-                        <label for="verification">輸入驗證碼 *</label>
+                <div class="row ver_li">
+                    <li class="en_verif">
+                        <label for="verification">輸入驗證碼 </label>
                         <input type="text" id="verification">
                     </li>
-                    <span class="verification-pic"></span>
-                    <span>點擊驗證圖片可更換驗證碼，請注意大小寫區分。</span>
+
+                    <div class="verify_box">
+                    <span class="verification-pic"> <img src="../assets/style/image/contact/Img_verify.jpg" alt=""></span>
+                    <span class="verification-p">點擊驗證圖片可更換驗證碼，請注意大小寫區分。</span>
+
+                    </div>
+                    
                 </div>
-                <div class="row">
+                <div class="row tick">
                     <input type="checkbox" name="agree" id="agree">
-                    <label for="agree">同意<a href="#!">隱私政策</a>*</label>
+                    <label for="agree">同意<a href="#!">隱私政策</a></label>
                 </div>
                 <li class="no-bg">
                     <div class="btn confirm-btn">

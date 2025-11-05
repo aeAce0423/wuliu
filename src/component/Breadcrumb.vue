@@ -94,7 +94,7 @@ watch(() => route.fullPath, generateBreadcrumb, { immediate: true });
 .breadcrumb {
   align-items: center;
   color: #323333;
-  margin-top: 1rem;
+  margin: 15px 0;
   opacity: 0.3;
   display: flex;
 }

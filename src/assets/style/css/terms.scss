@@ -9,26 +9,33 @@ $accent-gray3: #e9e9e9;
 
 // ---------------------------------------------------------------------------------------------------
 .terms-page {
-    .terms-wrapper {
-        color: $primary-gray;
-        margin-top: 3rem;
-        letter-spacing: 1px;
+  .terms-wrapper {
+    color: $primary-gray;
+    margin-top: 3rem;
+    letter-spacing: 1px;
 
-        h4{
-            margin: 0;
-        }
-        ol{
-            padding-left: 20px;
-        }
-
-        ol li{
-            list-style-type: decimal;
-            /* 顯示數字編號 */
-        }
-
-        ol ol li{
-            list-style-type: lower-alpha;
-            /* 子清單使用 a, b, c... */
-        }
+    h4 {
+      margin: 15px 0;
     }
+    ol {
+      padding-left: 20px;
+    }
+
+    li {
+     
+      line-height: 2rem;
+     
+    }
+
+    ol li {
+      list-style-type: decimal;
+      line-height: 2.2rem;
+      /* 顯示數字編號 */
+    }
+
+    ol ol li {
+      list-style-type: lower-alpha;
+      /* 子清單使用 a, b, c... */
+    }
+  }
 }

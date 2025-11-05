@@ -1,7 +1,7 @@
-@charset "UTF-8";
 .media-page .media-wrapper .media-tabs {
   text-align: right;
-  margin: 10px 0;
+  margin-top: -2rem;
+  margin-bottom: 2rem;
 }
 .media-page .media-wrapper .media-tabs a {
   margin-left: 15px;
@@ -31,17 +31,17 @@
   padding: 2rem;
 }
 .media-page .media-wrapper .media-cards .card h4 {
-  margin: 15px 0;
-  line-height: 2rem;
-  font-size: 24px;
+  margin: 0;
+  font-size: 1.5rem;
   font-weight: 600;
 }
 .media-page .media-wrapper .media-cards .card h4 span {
   margin: 0 10px;
 }
 .media-page .media-wrapper .media-cards .card h6 {
-  margin: 10px 0;
-  font-size: 16px;
+  margin: 0;
+  margin-top: 1rem;
+  font-size: 1rem;
   font-weight: normal;
 }
 .media-page .media-wrapper .media-cards .card h6 span {
@@ -91,71 +91,4 @@
   border-radius: 3px;
   color: #fff;
   background-color: #ffde0a;
-}
-
-.media-cards .media-pic:hover {
-  cursor: pointer;
-}
-.media-cards .text:hover {
-  cursor: pointer;
-}
-
-/* ≤990px 兩欄 */
-@media only screen and (max-width: 990px) {
-  .media-page .media-wrapper .media-cards {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 0;
-  }
-  .media-page .media-wrapper .media-cards .card {
-    width: 50%;
-    box-sizing: border-box;
-    /* 奇數卡（左欄） */
-    /* 偶數卡（右欄） */
-    /* 落單奇數（最後一張） */
-  }
-  .media-page .media-wrapper .media-cards .card .media-pic {
-    border-radius: 0;
-  }
-  .media-page .media-wrapper .media-cards .card:nth-child(2n+1) .media-pic {
-    border-radius: 15px 0 0 0;
-  }
-  .media-page .media-wrapper .media-cards .card:nth-child(2n+1) .text {
-    border-left: 1px solid #b0b0b0;
-    border-right: 1px solid #b0b0b0;
-  }
-  .media-page .media-wrapper .media-cards .card:nth-child(2n) .media-pic {
-    border-radius: 0 15px 0 0;
-  }
-  .media-page .media-wrapper .media-cards .card:nth-child(2n) .text {
-    border-left: 0;
-    border-right: 1px solid #b0b0b0;
-  }
-  .media-page .media-wrapper .media-cards .card:nth-child(odd):last-child .media-pic {
-    border-radius: 15px 15px 0 0;
-  }
-  .media-page .media-wrapper .media-cards .card:nth-child(odd):last-child .text {
-    border-left: 1px solid #b0b0b0;
-    border-right: 1px solid #b0b0b0;
-  }
-}
-/* ≤768px 單欄（卡片數 1） */
-@media only screen and (max-width: 768px) {
-  .media-page .media-wrapper .media-cards {
-    display: grid;
-    grid-template-columns: 1fr;
-    gap: 0;
-  }
-  .media-page .media-wrapper .media-cards .card {
-    width: 100%;
-  }
-  .media-page .media-wrapper .media-cards .card .media-pic {
-    border-radius: 15px;
-  }
-  .media-page .media-wrapper .media-cards .card .media-pic img {
-    border-radius: 15px;
-  }
-  .media-page .media-wrapper .media-cards .card .text {
-    border: none !important;
-  }
-}/*# sourceMappingURL=media.css.map */
+}/*# sourceMappingURL=media01.css.map */
