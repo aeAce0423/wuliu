@@ -41,7 +41,7 @@ $accent-gray3: #e9e9e9;
           padding: 2rem;
         }
         h4 {
-          margin: 15px 0;
+       
           line-height: 2rem;
           font-size: 24px;
           font-weight: 600;
@@ -140,6 +140,10 @@ $accent-gray3: #e9e9e9;
           .media-pic {
             border-radius: 0;
           }
+          .text {
+            padding: 1rem 1rem;
+            font-size: 22px;
+          }
 
           /* 奇數卡（左欄） */
           &:nth-child(2n + 1) {
@@ -173,6 +177,9 @@ $accent-gray3: #e9e9e9;
               border-right: 1px solid #b0b0b0;
             }
           }
+          h4 {
+            font-size: 22px;
+          }
         }
       }
     }
@@ -204,4 +211,40 @@ $accent-gray3: #e9e9e9;
       }
     }
   }
+}
+
+@media only screen and (max-width: 500px) {
+  .media-page {
+    .media-wrapper {
+      .media-cards {
+        .card {
+          h4 {
+            font-size: 20px;
+          
+          }
+        }
+      }
+     
+ .media-tabs {
+      a { font-size: 15px;
+        &.active { font-size: 18px;
+          
+        }
+      }
+    }
+
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
 }

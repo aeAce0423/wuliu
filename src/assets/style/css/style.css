@@ -57,7 +57,7 @@ li {
   --gradient-middle: #ffffff;
   --gradient-end: #ffffff;
 }
-.header .logo {
+.header .logo:hover {
   cursor: pointer;
 }
 .header .logo img {
@@ -783,68 +783,67 @@ section .more-btn:hover .icon svg path {
   color: #323333;
 }
 #service .section-top .services .service-wrapper .service-card .service-content .service-title {
-  font-size: 2.25rem;
-  line-height: 3rem;
+  font-size: 36px;
   font-weight: bold;
-  text-transform: capitalize;
+  margin-bottom: 6px;
 }
-#service .section-top .services .service-wrapper .service-card .service-subtitle {
+#service .section-top .services .service-wrapper .service-card .service-content .service-subtitle {
   font-size: 18px;
   font-family: "Noto Sans TC";
   font-weight: 600;
 }
-#service .section-top .services .service-wrapper .service-card .icon {
+#service .section-top .services .service-wrapper .service-card .service-content .icon {
   position: absolute;
   right: 36px;
   top: 50%;
   transform: translateY(-50%);
 }
-#service .section-top .services .service-card:nth-child(2),
-#service .section-top .services .service-card:nth-child(3) {
+#service .section-top .services .service-wrapper .service-card:nth-child(2),
+#service .section-top .services .service-wrapper .service-card:nth-child(3) {
   border-top: solid 1px #b0b0b0;
   border-bottom: solid 1px #b0b0b0;
 }
-#service .section-top .services .service-card:nth-child(3),
-#service .section-top .services .service-card:nth-child(5) {
+#service .section-top .services .service-wrapper .service-card:nth-child(3),
+#service .section-top .services .service-wrapper .service-card:nth-child(5) {
   border-left: solid 1px #b0b0b0;
 }
-#service .section-top .services .service-card.title-card {
+#service .section-top .services .service-wrapper .service-card.title-card {
   width: 100%;
   cursor: unset;
 }
-#service .section-top .services .service-card.title-card .service-title {
+#service .section-top .services .service-wrapper .service-card.title-card .service-title {
   font-size: 60px;
   line-height: 60px;
   font-weight: bold;
 }
-#service .section-top .services .service-card.title-card .service-subtitle {
+#service .section-top .services .service-wrapper .service-card.title-card .service-subtitle {
   font-size: 24px;
   font-family: "Noto Sans TC";
   font-weight: 600;
 }
-#service .services:hover {
+#service .section-top .services:hover {
   background-color: transparent;
 }
-#service .services:hover .service-card .service-content {
+#service .section-top .services:hover .service-card .service-content {
   width: 90%;
   height: 80%;
   background-color: rgba(255, 255, 255, 0.3);
   opacity: 0.5;
   border-radius: 15px;
 }
-#service .services:hover .service-card:nth-child(2),
-#service .services:hover .service-card:nth-child(3) {
+#service .section-top .services:hover .service-card:nth-child(2),
+#service .section-top .services:hover .service-card:nth-child(3) {
   border-top: solid 1px transparent;
   border-bottom: solid 1px transparent;
 }
-#service .services:hover .service-card:nth-child(3),
-#service .services:hover .service-card:nth-child(5) {
+#service .section-top .services:hover .service-card:nth-child(3),
+#service .section-top .services:hover .service-card:nth-child(5) {
   border-left: solid 1px transparent;
 }
-#service .services:hover .service-card.title-card .service-content {
+#service .section-top .services:hover .service-card.title-card .service-content {
   width: 95%;
 }
-#service .services:hover .service-card:hover .service-content {
+#service .section-top .services:hover .service-card:hover .service-content {
   background-color: rgba(255, 255, 255, 0.8);
   opacity: 1;
 }
@@ -1094,6 +1093,7 @@ section .more-btn:hover .icon svg path {
 .footer .footer-bottom .contact td {
   font-family: "Noto Sans TC";
   padding: 6px 0;
+  line-height: 1.5rem;
 }
 .footer .footer-bottom .nav-app {
   margin-top: -20px;
@@ -1107,7 +1107,7 @@ section .more-btn:hover .icon svg path {
   gap: 24px;
 }
 .footer .footer-bottom .footer-nav li {
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 600;
 }
 .footer .footer-bottom .footer-nav li a {
@@ -1115,7 +1115,8 @@ section .more-btn:hover .icon svg path {
   color: #323333;
 }
 .footer .footer-bottom .copyright {
-  font-size: 1rem;
+  font-size: 14px;
+  letter-spacing: 1px;
   align-self: flex-end;
   color: #b0b0b0;
 }
@@ -1161,7 +1162,7 @@ section .more-btn:hover .icon svg path {
   font-family: "Poppins";
   color: #323333;
   font-size: 18px;
-  line-height: 2rem;
+  line-height: 1.5rem;
   opacity: 0.3;
 }
 
@@ -1215,6 +1216,9 @@ section .more-btn:hover .icon svg path {
 .mobile-view section.header-mob .logo {
   width: 120px;
 }
+.mobile-view section.header-mob .logo:hover {
+  cursor: pointer;
+}
 .mobile-view section.header-mob .logo img {
   width: 100%;
 }
@@ -1222,6 +1226,9 @@ section .more-btn:hover .icon svg path {
   position: relative;
   width: 30px;
   height: 24px;
+}
+.mobile-view section.header-mob .nav-bar:hover {
+  cursor: pointer;
 }
 .mobile-view section.header-mob .nav-bar::before,
 .mobile-view section.header-mob .nav-bar::after {
@@ -1355,7 +1362,7 @@ section .more-btn:hover .icon svg path {
   font-weight: 500;
 }
 .mobile-view .footer .footer-bottom .copyright {
-  font-size: 0.65rem;
+  font-size: 12px;
   align-self: flex-start;
 }
 
@@ -1517,6 +1524,13 @@ section .more-btn:hover .icon svg path {
     position: absolute;
     left: 5%;
   }
+  .nav-sidebar.container .nav-list li {
+    padding-left: 0;
+  }
+  .mobile-view #info .content h1 {
+    font-size: 2.8rem;
+    margin: 0;
+  }
   .mobile-view #info .content h1 .flow-rotate {
     -o-object-fit: cover;
     object-fit: cover;
@@ -1524,35 +1538,34 @@ section .more-btn:hover .icon svg path {
     width: 207px;
     height: auto;
   }
-  .mobile-view #info .content h1 {
-    font-size: 2.8rem;
-    margin: 0;
-  }
-  .mobile-view .nav-sidebar.container .nav-list {
+  .nav-sidebar .container .nav-list {
     width: 74%;
     height: 80%;
     position: relative;
     top: 9%;
   }
-  .nav-sidebar.container .nav-list li {
-    padding-left: 0;
-  }
 }
 @media only screen and (max-width: 500px) {
-  #intro .intro-text {
+  .mobile-view #intro .intro-text {
     position: absolute;
     top: 7%;
     left: 7%;
   }
-  #intro .intro-text h1 {
-    font-size: 2rem;
-    line-height: 2.2rem;
+  .mobile-view #intro .intro-text h1 {
+    width: 60%;
+    font-size: 22px;
+    line-height: 1.4rem;
+    margin: 0;
+    margin-bottom: 6px;
+  }
+  .mobile-view #intro .intro-text h2 {
+    width: 100%;
+    font-size: 15px;
+    line-height: 1.4rem;
     margin: 0;
   }
-  #intro .intro-text h2 {
-    font-size: 1.5rem;
-    margin: 0;
-    line-height: 2.2rem;
+  .mobile-view #info {
+    height: 480px;
   }
   .mobile-view .nav-sidebar {
     padding: 0;
@@ -1562,15 +1575,26 @@ section .more-btn:hover .icon svg path {
     position: relative;
     top: 10%;
   }
+  .mobile-view .nav-sidebar.container .nav-list li a {
+    font-size: 1.5rem;
+  }
+  .mobile-view #info .content .title {
+    font-size: 30px;
+  }
   .mobile-view #info .content h1 {
-    font-size: 3rem;
+    font-size: 36px;
+    line-height: 2rem;
   }
   .mobile-view #info .content h1 .flow-rotate {
     width: 170px;
     height: auto;
+    margin: 10px 0;
   }
   .mobile-view #info .content h1 .info-dance {
     margin: 0 10px;
+  }
+  .mobile-view #info .content p {
+    line-height: 1.5rem;
   }
   .mobile-view #news .newslist .new-item .pic img {
     height: 400px;
@@ -1598,10 +1622,18 @@ section .more-btn:hover .icon svg path {
     opacity: 0.8;
   }
   #service .section-top .services .service-wrapper .service-card:not(.title-card) .service-content .service-title {
-    font-size: 1.5rem;
-    line-height: 1.5rem;
+    font-size: 1rem;
+  }
+  #service .section-top .services .service-wrapper .service-card:not(.title-card) .service-content .service-subtitle {
+    font-size: 0.8rem;
   }
   #service .section-top .services .service-wrapper .service-card:not(.title-card) .service-content .icon {
     right: 20px;
+  }
+  .mobile-view .footer .footer-bottom {
+    padding: 2rem 1rem;
+  }
+  .footer .footer-bottom .footer-nav li {
+    font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

@@ -28,6 +28,7 @@
 }
 .about-page .info-wrapper .about-content p {
   opacity: 0.6;
+  line-height: 2rem;
 }
 .about-page .info-wrapper .about-content .more-btn {
   width: 340px;
@@ -182,7 +183,10 @@
   height: 65px;
 }
 .mobile-view .about-page .info-wrapper .about-content h1 {
-  font-size: 3rem;
+  font-size: 2.4rem;
+}
+.mobile-view .about-page .info-wrapper .about-content p {
+  font-size: 14px;
 }
 .mobile-view .about-page .info-wrapper .about-content .more-btn {
   width: 100%;
@@ -205,6 +209,7 @@
 }
 .mobile-view .about-page .teams-wrapper p {
   text-align: center;
+  font-size: 15px;
 }
 .mobile-view .about-page .teams-wrapper .team-cards {
   grid-template-columns: repeat(2, 1fr);

@@ -58,12 +58,6 @@ const imgListStyle = computed(() => ({
   transform: `translateY(-${projectIndex.value * imageHeight}px)`
 }))
 
-const scrollToInfo = function() {
-  const infoSection = document.getElementById("info");
-  if (infoSection) {
-    infoSection.scrollIntoView({ behavior: "smooth" });
-  }
-}
 
 
 watch(activeIndex, async (newIndex) => {
@@ -85,9 +79,7 @@ watch(activeIndex, async (newIndex) => {
     }
   }
 });
-onMounted(() => {
-  imageHeight = document.querySelector('#project .content .project-img').getBoundingClientRect().height;
-});
+
 </script>
 
 

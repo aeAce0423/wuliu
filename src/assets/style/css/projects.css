@@ -105,10 +105,13 @@
   margin-top: 0;
 }
 .mobile-view .projects-page .projects-wrapper .project-tabs a {
-  font-size: 1rem;
+  font-size: 14px;
 }
 .mobile-view .projects-page .projects-wrapper .projects-cards {
   grid-template-columns: repeat(1, 1fr);
+}
+.mobile-view .projects-page .projects-wrapper .projects-cards .card h4 {
+  font-size: 20px;
 }
 .mobile-view .projects-page .projects-wrapper .card .more-btn {
   width: 40%;

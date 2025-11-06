@@ -31,7 +31,6 @@
   padding: 2rem;
 }
 .media-page .media-wrapper .media-cards .card h4 {
-  margin: 15px 0;
   line-height: 2rem;
   font-size: 24px;
   font-weight: 600;
@@ -117,6 +116,10 @@
   .media-page .media-wrapper .media-cards .card .media-pic {
     border-radius: 0;
   }
+  .media-page .media-wrapper .media-cards .card .text {
+    padding: 1rem 1rem;
+    font-size: 22px;
+  }
   .media-page .media-wrapper .media-cards .card:nth-child(2n+1) .media-pic {
     border-radius: 15px 0 0 0;
   }
@@ -138,6 +141,9 @@
     border-left: 1px solid #b0b0b0;
     border-right: 1px solid #b0b0b0;
   }
+  .media-page .media-wrapper .media-cards .card h4 {
+    font-size: 22px;
+  }
 }
 /* ≤768px 單欄（卡片數 1） */
 @media only screen and (max-width: 768px) {
@@ -157,5 +163,16 @@
   }
   .media-page .media-wrapper .media-cards .card .text {
     border: none !important;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .media-page .media-wrapper .media-cards .card h4 {
+    font-size: 20px;
+  }
+  .media-page .media-wrapper .media-tabs a {
+    font-size: 15px;
+  }
+  .media-page .media-wrapper .media-tabs a.active {
+    font-size: 18px;
   }
 }/*# sourceMappingURL=media.css.map */

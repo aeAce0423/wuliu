@@ -42,7 +42,7 @@ $accent-gray3: #e9e9e9;
       }
 
       p {
-        opacity: 0.6;
+        opacity: 0.6; line-height: 2rem;
       }
 
       .more-btn {
@@ -230,8 +230,9 @@ $accent-gray3: #e9e9e9;
           height: 65px;
         }
         h1 {
-          font-size: 3rem;
+          font-size: 2.4rem;
         }
+        p{ font-size: 14px;}
         .more-btn {
           width: 100%;
         }
@@ -259,7 +260,7 @@ $accent-gray3: #e9e9e9;
         }
       }
       p {
-        text-align: center;
+        text-align: center; font-size: 15px;
       }
       .team-cards {
         grid-template-columns: repeat(2, 1fr);

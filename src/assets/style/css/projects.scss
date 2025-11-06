@@ -124,11 +124,16 @@ $accent-gray3: #e9e9e9;
       .project-tabs {
         margin-top: 0;
         a {
-          font-size: 1rem;
+          font-size: 14px;
         }
       }
       .projects-cards {
         grid-template-columns: repeat(1, 1fr);
+        .card {
+          h4 {
+            font-size: 20px;
+          }
+        }
       }
       .card .more-btn {
         width: 40%;
