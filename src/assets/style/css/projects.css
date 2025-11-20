@@ -38,12 +38,17 @@
 .projects-page .projects-wrapper .projects-cards .card .project-pic {
   border-radius: 15px;
   overflow: hidden;
+  transform: scale(1, 1);
+  transition: all 1s ease-out;
+}
+.projects-page .projects-wrapper .projects-cards .card .project-pic:hover {
+  transform: scale(1.05, 1.05);
 }
 .projects-page .projects-wrapper .projects-cards .card h4 {
   margin: 15px 0;
   line-height: 2rem;
   font-size: 24px;
-  font-weight: 600;
+  font-weight: 500;
 }
 .projects-page .projects-wrapper .projects-cards .card h4 span {
   margin: 0 10px;
@@ -70,7 +75,7 @@
   height: 62px;
 }
 .projects-page .projects-wrapper .navigation {
-  margin: 3rem auto;
+  margin: 4rem auto;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -96,6 +101,42 @@
   padding: 8px 18px;
 }
 .projects-page .projects-wrapper .navigation .num span.active {
+  border-radius: 3px;
+  color: #fff;
+  background-color: #ffde0a;
+}
+
+.projects_pageInner {
+  width: 80%;
+  margin: 0 auto;
+}
+.projects_pageInner .navigation {
+  margin: 4rem auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 25px;
+}
+.projects_pageInner .navigation span {
+  cursor: pointer;
+}
+.projects_pageInner .navigation .disabled {
+  cursor: unset;
+}
+.projects_pageInner .navigation .disabled svg {
+  opacity: 0.5;
+}
+.projects_pageInner .navigation .num {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.projects_pageInner .navigation .num span {
+  font-weight: bold;
+  padding: 8px 18px;
+}
+.projects_pageInner .navigation .num span.active {
   border-radius: 3px;
   color: #fff;
   background-color: #ffde0a;

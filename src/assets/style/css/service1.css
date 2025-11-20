@@ -1,0 +1,565 @@
+@charset "UTF-8";
+.service-page {
+  /*
+    .service-wrapper {
+      position: relative;
+      overflow: hidden;
+      z-index: 0;
+
+      .background-video {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+
+        width: 100%;
+        height: 100%;
+
+        img,
+        video {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      }
+
+      .service-cards {
+        position: relative;
+        z-index: 1;
+        padding: 2rem;
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        .card {
+          background-color: transparent;
+          width: 100%;
+          height: 50vh;
+          max-height: 450px;
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          border-radius: 20px;
+          padding: 1rem 2rem;
+          opacity: 0.6;
+          cursor: pointer;
+          transition: 0.5s;
+
+          .card-l {
+            width: 40%;
+            text-align: center;
+
+            .row {
+              flex-direction: column;
+              justify-content: center;
+              align-items: center;
+
+              .title {
+                text-transform: none;
+                font-size: 2.25rem;
+                color: #fff;
+              }
+
+              .subtitle {
+                font-size: 1rem;
+                color: #fff;
+              }
+            }
+          }
+
+          .card-r {
+            width: 50%;
+
+            p {
+              font-size: 1rem;
+              opacity: 1;
+              color: #fff;
+              width: 50%;
+            }
+
+            .more-btn {
+              width: 340px;
+              background-color: #fff;
+
+              .text {
+                color: $primary-gray;
+                font-size: 1rem;
+                font-weight: normal;
+                font-size: 20px;
+                line-height: 18px;
+              }
+
+              .icon {
+                background-color: $primary-gray;
+
+                svg {
+                  path {
+                    fill: #fff;
+                  }
+                }
+              }
+            }
+
+            .more-btn:hover {
+              background-color: $primary-yellow;
+
+              .icon {
+                background-color: #fff;
+
+                svg {
+                  path {
+                    fill: $primary-gray;
+                  }
+                }
+              }
+            }
+          }
+        }
+
+        .card:hover {
+          background-color: rgba($color: #323333, $alpha: 0.8);
+          opacity: 1;
+        }
+      }
+    }
+  */
+}
+.service-page section {
+  padding: 0;
+}
+.service-page .service-info {
+  padding: 3rem 5rem;
+}
+.service-page .service-wrapperItem {
+  /* 左欄 SERVICE */
+  /* 中欄內容 */
+  /* 右欄大字 */
+}
+.service-page .service-wrapperItem li {
+  list-style: none;
+  margin-bottom: 80px;
+}
+.service-page .service-wrapperItem .service-item {
+  border-bottom: 1px solid #d9d9d9;
+  padding: 3rem 5rem;
+}
+.service-page .service-wrapperItem .service-content {
+  display: flex;
+  width: 100%;
+}
+.service-page .service-wrapperItem .service-label-l {
+  width: 15%;
+  font-size: 18px;
+  color: #b0b0b0;
+}
+.service-page .service-wrapperItem .service-label-m {
+  width: 31%;
+  margin-right: 12%;
+  position: relative;
+  z-index: 2;
+  /* TAGS 區塊 */
+}
+.service-page .service-wrapperItem .service-label-m .service-title {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+.service-page .service-wrapperItem .service-label-m .service-desc {
+  margin-bottom: 40px;
+  opacity: 1;
+}
+.service-page .service-wrapperItem .service-label-m p {
+  line-height: 2.4rem;
+}
+.service-page .service-wrapperItem .service-label-m .service-tags {
+  width: 400px;
+}
+.service-page .service-wrapperItem .service-label-m .service-tags ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  width: 100%;
+}
+.service-page .service-wrapperItem .service-label-m .service-tags li {
+  width: 33.3333333333%;
+  display: flex;
+  align-items: center;
+  position: relative;
+  font-size: 18px;
+  box-sizing: border-box;
+  margin-bottom: 20px;
+  /* 每行第3個不加｜ */
+}
+.service-page .service-wrapperItem .service-label-m .service-tags li::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #ccc;
+  margin-left: 31px;
+}
+.service-page .service-wrapperItem .service-label-m .service-tags li:nth-of-type(3n)::after {
+  content: "";
+}
+.service-page .service-wrapperItem .service-label-r {
+  width: 30%;
+  display: flex;
+  align-items: self-end;
+  position: relative;
+  z-index: 1;
+  text-transform: capitalize;
+}
+.service-page .service-wrapperItem .service-label-r .service-bg-text {
+  font-size: 8rem;
+  font-weight: 900;
+  color: #fff;
+  opacity: 0.9;
+  line-height: 1;
+  white-space: nowrap;
+}
+.service-page .process-wrapper {
+  background-color: #323333;
+  text-align: center;
+  padding: 5rem 0;
+}
+.service-page .process-wrapper .title {
+  font-size: 4rem;
+}
+.service-page .process-wrapper .subtitle {
+  color: #fff;
+  margin-top: -1rem;
+}
+.service-page .process-wrapper img {
+  margin-top: 3rem;
+  width: 60%;
+  margin: 0 auto;
+}
+.service-page .process-wrapper .process-mob {
+  display: none;
+}
+.service-page .footer {
+  background-color: #323333;
+  color: #fff;
+}
+.service-page .footer .footer-nav {
+  color: #fff;
+}
+.service-page .footer .footer-nav li a {
+  color: #fff;
+}
+
+.mobile-view .service-page .service-info {
+  padding: 2rem 1rem;
+}
+.mobile-view .service-page .service-wrapper .background-video {
+  display: none;
+}
+.mobile-view .service-page .service-wrapper .service-cards .card {
+  flex-direction: column;
+}
+.mobile-view .service-page .service-wrapper .service-cards .card .card-l {
+  width: 100%;
+}
+.mobile-view .service-page .service-wrapper .service-cards .card .card-r {
+  width: 100%;
+}
+.mobile-view .service-page .service-wrapper .service-cards .card .card-r .more-btn {
+  width: 100%;
+}
+.mobile-view .service-page .process-wrapper .title {
+  font-size: 3rem;
+  width: 100%;
+}
+
+/*新服務*/
+.sticky-section {
+  padding: 3rem 5rem;
+  position: relative;
+  z-index: 0;
+  /* 堆疊卡片 */
+}
+.sticky-section .sticky-card {
+  border-bottom: 1px solid #d9d9d9;
+  position: sticky;
+  top: calc(0px + var(--index) * 100px);
+  min-height: 100px;
+  background: #faf6f3;
+  z-index: calc(10 + var(--index));
+  cursor: pointer;
+  transition: opacity 0.2s ease;
+  padding: 30px 0;
+  /* 卡片內容(三欄) */
+}
+.sticky-section .sticky-card .service-card-V2 {
+  display: flex;
+  /* 左側 SERVICE 標籤 */
+  /* 中間內容區塊 */
+  /* 右側大字水印 */
+}
+.sticky-section .sticky-card .service-card-V2 .service-label-V2-column {
+  display: flex;
+  flex-shrink: 0;
+  flex-basis: 12%;
+  align-items: flex-start;
+  padding-top: 8px;
+}
+.sticky-section .sticky-card .service-card-V2 .service-label-V2-column .service-label-V2 {
+  font-size: 18px;
+  color: #999;
+  letter-spacing: 2px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.sticky-section .sticky-card .service-card-V2 .text-content {
+  flex-shrink: 0;
+  flex-basis: 50%;
+  /* 標題區塊 */
+  /* 可收合內容 */
+}
+.sticky-section .sticky-card .service-card-V2 .text-content .sticky-title {
+  transition: opacity 0.2s ease;
+}
+.sticky-section .sticky-card .service-card-V2 .text-content .sticky-title .service-title-V2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #323333;
+}
+.sticky-section .sticky-card .service-card-V2 .text-content .card-body-s {
+  overflow: hidden;
+  transition: max-height 0.4s cubic-bezier(0.2, 0.9, 0.2, 1), opacity 0.3s ease, padding 0.3s ease;
+  opacity: 1;
+  width: 62%;
+  margin-top: 10px;
+}
+.sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-description {
+  font-size: 18px;
+  color: #323333;
+  line-height: 2.2rem;
+  margin: 20px 0;
+  opacity: 1;
+}
+.sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 {
+  width: 70%;
+  margin-top: 40px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 .service-tag-V2 {
+  font-size: 17px;
+  line-height: 1.8rem;
+  position: relative;
+}
+.sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 .service-tag-V2::after {
+  content: "";
+  display: inline-block;
+  width: 1px;
+  height: 12px;
+  background-color: #b0b0b0;
+  margin: 0 20px;
+}
+.sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 .service-tag-V2:last-child::after {
+  content: "";
+  display: none;
+}
+.sticky-section .sticky-card .service-card-V2 .text-content .card-body-s.closed {
+  max-height: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+}
+.sticky-section .sticky-card .service-card-V2 .text-watermark {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.sticky-section .sticky-card .service-card-V2 .text-watermark .watermark-text {
+  text-transform: capitalize;
+  font-size: 8rem;
+  font-weight: 900;
+  color: #fff;
+  opacity: 0.9;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+@media only screen and (max-width: 1680px) {
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s {
+    width: 100%;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-watermark .watermark-text {
+    font-size: 6rem;
+  }
+}
+@media only screen and (max-width: 1440px) {
+  .sticky-section .sticky-card .service-card-V2 .text-watermark .watermark-text {
+    font-size: 5rem;
+  }
+}
+@media only screen and (max-width: 1280px) {
+  /* 堆疊卡片 */
+  .sticky-section .sticky-card {
+    position: sticky;
+    top: calc(0px + var(--index) * 100px);
+    min-height: 100px;
+  }
+  .sticky-section .sticky-card .service-card-V2 {
+    display: flex;
+    flex-direction: column;
+  }
+  .sticky-section .sticky-card .service-card-V2 .service-label-V2-column {
+    margin: 0 0 10px 0;
+    flex-basis: auto;
+  }
+  .sticky-section .sticky-card .service-card-V2 .service-label-V2-column .service-label-V2 {
+    font-size: 15px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content {
+    flex-basis: 100%;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s {
+    width: 100%;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-watermark {
+    align-items: flex-start;
+    margin: 15px 0 0 0;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-watermark .watermark-text {
+    font-size: 4rem;
+  }
+}
+@media only screen and (max-width: 990px) {
+  .sticky-section .sticky-card .service-card-V2 .text-watermark .watermark-text {
+    font-size: 3.5rem;
+  }
+}
+@media (max-width: 768px) {
+  .sticky-section {
+    padding: 2rem 1.5rem;
+  }
+  /* 關鍵修正:減少 sticky-card 的縮合高度 */
+  .sticky-section .sticky-card {
+    top: calc(0px + var(--index) * 100px);
+    z-index: calc(10 + var(--index));
+    min-height: 100px;
+    padding: 25px 0;
+  }
+  .sticky-section .sticky-card .service-card-V2 .service-label-V2-column .service-label-V2 {
+    font-size: 14px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .sticky-title .service-title-V2 {
+    font-size: 26px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-description {
+    font-size: 15px;
+    line-height: 1.8rem;
+    margin: 15px 0;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 {
+    width: 100%;
+    margin-top: 15px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 .service-tag-V2 {
+    font-size: 14px;
+    line-height: 1.6rem;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 .service-tag-V2::after {
+    margin: 0 8px;
+    height: 10px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-watermark .watermark-text {
+    font-size: 3rem;
+  }
+}
+@media (max-width: 480px) {
+  .sticky-section {
+    padding: 1.5rem 1rem;
+  }
+  .sticky-section .sticky-card {
+    top: calc(0px + var(--index) * 680px);
+    min-height: 80px;
+    padding: 15px 0;
+  }
+  .sticky-section .sticky-card .service-card-V2 .service-label-V2-column .service-label-V2 {
+    font-size: 12px;
+    letter-spacing: 1px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .sticky-title .service-title-V2 {
+    font-size: 22px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s {
+    margin-top: 10px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-description {
+    font-size: 14px;
+    line-height: 1.6rem;
+    margin: 10px 0;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 {
+    margin-top: 10px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 .service-tag-V2 {
+    font-size: 13px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s .service-tagGroup-V2 .service-tag-V2::after {
+    margin: 0 6px;
+  }
+  .sticky-section .sticky-card .service-card-V2 .text-watermark .watermark-text {
+    font-size: 2.5rem;
+  }
+}
+/* 針對 mobile-view 的額外確保 */
+.mobile-view .sticky-section .sticky-card .service-card-V2 .text-content .card-body-s.closed {
+  max-height: 0 !important;
+  margin-top: 0 !important;
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+  opacity: 0 !important;
+  overflow: hidden !important;
+}
+
+/*新服務 end*/
+@media only screen and (max-width: 990px) {
+  .service-page .service-wrapperItem .service-label-l {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .service-page .service-wrapperItem .service-label-m {
+    width: 100%;
+    margin-right: 0;
+  }
+  .service-page .service-wrapperItem .service-label-r {
+    width: 100%;
+  }
+  .service-page .service-wrapperItem .service-content {
+    flex-wrap: wrap;
+  }
+  .service-page .service-wrapperItem .service-label-r .service-bg-text {
+    font-size: 6.5rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .mobile-view .service-page .process-wrapper .process-mob {
+    display: block;
+    width: 100%;
+    padding: 2rem;
+    height: auto;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .service-page .service-wrapperItem .service-label-r .service-bg-text {
+    font-size: 3rem;
+  }
+}/*# sourceMappingURL=service1.css.map */

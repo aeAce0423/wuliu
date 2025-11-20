@@ -102,7 +102,7 @@ watch(activeIndex, async (newIndex) => {
 
     </div>
     <a href="javascript:void(0);" @click="scrollToInfo" class="scroll">
-      <img src=".././assets/style/image/index/intro-scoll.svg" alt="" />
+      <img src=".././assets/style/image/index/i-3.png" alt="" />
       <h4>Scroll</h4>
     </a>
   </section>
@@ -187,8 +187,8 @@ watch(activeIndex, async (newIndex) => {
           <div class="service-wrapper">
             <div class="service-card title-card" @mouseenter="activeIndex = 0">
               <div class="service-content">
-                <div class="service-title">Services</div>
-                <div class="service-subtitle">服務內容</div>
+                <div class="service-title">Services CASES</div>
+                <div class="service-subtitle">服務案例</div>
               </div>
             </div>
             <router-link to="/service" custom v-slot="{ navigate }">
@@ -261,7 +261,7 @@ watch(activeIndex, async (newIndex) => {
         </router-link>
       </div>
     </section>
-    <section id="news">
+    <section id="news" style="display: none;">
       <div class="row">
         <div class="title">News</div>
         <div class="subtitle">最新消息</div>

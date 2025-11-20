@@ -11,13 +11,14 @@ const logoSrc = ref(logo) // 預設為白色 logo
 
 // === 導覽列資料 ===
 const navItems = [
-  { label: 'About', link: '/about', name: '關於五六', num: '01' },
-  { label: 'Projects', link: '/projects', name: '案例分享', num: '02' },
-  { label: 'Service', link: '/service', name: '服務流程', num: '03' },
-  { label: 'News', link: '/media', name: '媒體報導', num: '04' },
-  { label: 'Blog', link: '/blog', name: '五六觀點', num: '05' },
-  { label: 'Contact', link: '/contact', name: '聯絡五六', num: '06' },
-  { label: 'Terms', link: '/terms', name: '法律條款', num: '07' }
+  { label: 'HOME', link: '/home', name: '首頁', num: '01' },
+  { label: 'About', link: '/about', name: '關於五六', num: '02' },
+  { label: 'Projects', link: '/projects', name: '案例分享', num: '03' },
+  { label: 'Service', link: '/service', name: '服務流程', num: '04' },
+  //{ label: 'News', link: '/media', name: '媒體報導', num: '04' },
+  //{ label: 'Blog', link: '/blog', name: '五六觀點', num: '05' },
+  { label: 'Contact', link: '/contact', name: '聯絡我們', num: '05' },
+  //{ label: 'Terms', link: '/terms', name: '法律條款', num: '07' }
 ]
 
 // === DOM 參考 ===
@@ -115,7 +116,7 @@ watch(isOpen, (newVal) => {
       </div>
     </router-link>
     <div class="nav-bar"></div>
-    <div class="nav-contact">
+    <div class="nav-contact" style="display: none;">
       <div class="text">follow us</div>
       <div class="nav-app">
         <div class="line icon"></div>
@@ -161,7 +162,7 @@ watch(isOpen, (newVal) => {
           <li>events</li>
           <li>marketing</li>
         </ul>
-        <p>copyright@2024 Wuliu Culture And Creative . <br />
+        <p>copyright@2025 Wuliu Culture And Creative . <br />
           All Rights Reserved.
         </p>
       </div>

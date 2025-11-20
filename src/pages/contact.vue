@@ -89,7 +89,7 @@ import Breadcrumb from '@/component/Breadcrumb.vue'
                         </svg>
                     </div>
                 </li>
-                <div class="contact-app">
+                <div class="contact-app" style="display: none;">
                     <div class="title">Follow us</div>
                     <div class="app-btns">
                         <div class="btn">

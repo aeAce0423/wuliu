@@ -62,7 +62,7 @@ const route = useRouter();
         </div>
       </div>
     </section>
-    <div class="milestones-wrapper">
+    <div class="milestones-wrapper" style="display: none;">
       <div class="title">Milestones</div>
       <div class="subtitle">公司歷程</div>
       <ul>
@@ -77,7 +77,7 @@ const route = useRouter();
         <li><span>2025</span><span class="divide">|</span><span>建構品牌宇宙觀，佈局虛實整合與國際市場</span></li>
       </ul>
     </div>
-    <section>
+    <section style="display: none;">
       <div class="teams-wrapper">
         <div class="row">
           <span>

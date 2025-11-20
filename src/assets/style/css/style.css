@@ -35,6 +35,7 @@ li {
 
 .header-mob {
   display: none;
+  z-index: 20;
 }
 
 .header {
@@ -68,6 +69,8 @@ li {
   width: 24px;
   height: 42px;
   cursor: pointer;
+  position: absolute;
+  top: 50%;
 }
 .header .nav-bar::before, .header .nav-bar::after {
   content: "";
@@ -174,6 +177,7 @@ li {
   justify-content: space-between;
   align-items: stretch;
   margin: 0;
+  padding: 5% 0;
 }
 .nav-sidebar.container .nav-list li {
   text-transform: uppercase;
@@ -221,6 +225,7 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-top: 5%;
 }
 .nav-sidebar.container .nav-content ul {
   text-transform: uppercase;
@@ -262,6 +267,7 @@ li {
   color: black;
   font-size: 20px;
   cursor: pointer;
+  display: none;
 }
 
 /* 導航列滑動動畫 */
@@ -316,7 +322,7 @@ section .subtitle {
 section .more-btn {
   margin-top: 1.25rem;
   height: 92px;
-  background-color: #b0b0b0;
+  background-color: #d9d9d9;
   padding: 0 1rem;
   display: flex;
   justify-content: space-between;
@@ -411,10 +417,13 @@ section .more-btn:hover .icon svg path {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  animation: scrollFloating 2s ease-in-out infinite; /* 套用動畫 */
 }
 #intro .scroll img {
   width: 4rem;
   height: 4rem;
+  position: relative;
+  bottom: 20px;
 }
 #intro .scroll h4 {
   color: #fff;
@@ -422,6 +431,17 @@ section .more-btn:hover .icon svg path {
   text-transform: uppercase;
 }
 
+@keyframes scrollFloating {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px); /* 向上移動 10px */
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
 #info {
   position: relative;
   height: 890px;
@@ -847,6 +867,9 @@ section .more-btn:hover .icon svg path {
   background-color: rgba(255, 255, 255, 0.8);
   opacity: 1;
 }
+#service .section-bottom {
+  padding-bottom: 4rem;
+}
 
 #news {
   display: flex;
@@ -972,19 +995,7 @@ section .more-btn:hover .icon svg path {
   color: white;
   height: 800px;
   /* 黑色遮罩，只遮住背景 */
-  /* 包裹中央內容，確保浮在遮罩上 */
-  /* 中央卡片 */
   /* REC 紅點 */
-}
-.footer .footer-top .background-video {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  -o-object-fit: contain;
-     object-fit: contain;
-  z-index: 1;
 }
 .footer .footer-top .overlay {
   position: absolute;
@@ -992,69 +1003,86 @@ section .more-btn:hover .icon svg path {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.3);
   background-image: url(../image/video/footermask.png);
   z-index: 2;
 }
+.footer .footer-top .background-video {
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+}
+.footer .footer-top .background-video video {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  filter: brightness(0.7);
+}
 .footer .footer-top .content-wrapper {
   position: relative;
-  z-index: 0;
+  z-index: 3;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  z-index: 3;
 }
 .footer .footer-top .content-box {
-  background: rgba(255, 255, 255, 0.08);
-  padding: 40px;
+  position: absolute;
+  background: rgba(255, 255, 255, 0.2);
   border-radius: 20px;
-  text-align: center;
-  color: white;
+  padding: 40px;
   min-width: 60%;
   min-height: 70%;
-  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
-  position: relative;
+  color: white;
+  text-align: center;
+  z-index: 10;
 }
 .footer .footer-top .content-box .content-text {
-  width: -moz-max-content;
-  width: max-content;
   position: absolute;
   left: 50%;
   top: 50%;
   transform: translate(-50%, -50%);
   letter-spacing: 3px;
+  width: 100%;
+  line-height: 1.6rem;
+}
+.footer .footer-top .content-box .content-text p {
+  font-size: 15px;
+  text-transform: capitalize;
+  color: #fff;
+  opacity: 1;
 }
 .footer .footer-top .rec {
   font-weight: bold;
-  text-align: left;
   font-size: 1.25rem;
   color: white;
+  text-align: left;
 }
 .footer .footer-top .rec .dot {
-  display: inline-block;
   width: 10px;
   height: 10px;
   background-color: red;
+  display: inline-block;
   border-radius: 50%;
   margin-left: 5px;
 }
 .footer .footer-top h1 {
-  font-size: 5.5rem;
+  font-size: 3.5rem;
   margin: 20px 0;
 }
 .footer .footer-top .buttons {
   display: flex;
-  gap: 20px;
   justify-content: center;
+  gap: 20px;
   margin-top: 20px;
 }
 .footer .footer-top .btn {
   min-width: 300px;
   padding: 20px 30px;
+  background: rgba(255, 255, 255, 0.2);
   border: none;
   border-radius: 8px;
-  background-color: rgba(255, 255, 255, 0.2);
   color: white;
   cursor: pointer;
   font-size: 1rem;
@@ -1063,7 +1091,30 @@ section .more-btn:hover .icon svg path {
   justify-content: space-between;
 }
 .footer .footer-top .btn:hover {
-  background-color: rgba(255, 255, 255, 0.4);
+  background: rgba(255, 255, 255, 0.4);
+}
+.footer .footer-top .marquee-wrapper {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  overflow: visible;
+  z-index: 5;
+  /* 使用 clip-path 遮住 content-box 範圍 */
+  clip-path: polygon(0 0, 0 100%, 20% 100%, 20% 0, 80% 0, 80% 100%, 100% 100%, 100% 0);
+}
+.footer .footer-top .marquee {
+  display: flex;
+  white-space: nowrap;
+  animation: marquee var(--marquee-duration) linear infinite;
+  font-size: 10rem;
+  font-weight: 800;
+  -webkit-text-stroke: 1px #fff;
+  color: transparent;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  padding-right: 1ch;
 }
 .footer .footer-bottom {
   padding: 5.5rem 3.5rem;
@@ -1124,6 +1175,14 @@ section .more-btn:hover .icon svg path {
   margin: 20px 0;
 }
 
+@keyframes marquee {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(100%);
+  }
+}
 .other-page .row {
   display: flex;
 }
@@ -1367,27 +1426,27 @@ section .more-btn:hover .icon svg path {
 }
 
 @media only screen and (max-width: 1680px) {
-  #intro .intro-text {
+  .desktop-view #intro .intro-text {
     position: absolute;
     left: 13%;
   }
-  .desktop-view .nav-sidebar.container .nav-list li {
+  .desktop-view .nav-sidebar .container ul {
+    height: 80%;
+  }
+  .desktop-view .nav-sidebar .container .nav-list li {
     font-size: 4rem;
     color: #ffde0a;
   }
-  .desktop-view .nav-sidebar ul {
-    height: 80%;
-  }
-  .desktop-view .nav-sidebar.container .nav-content .video-wrap {
+  .desktop-view .nav-sidebar .container .nav-content .video-wrap {
     height: 50%;
   }
 }
 @media only screen and (max-width: 1440px) {
-  #intro .intro-text h1 {
+  .desktop-view #intro .intro-text h1 {
     font-size: 3rem;
     line-height: 3rem;
   }
-  #intro .intro-text h2 {
+  .desktop-view #intro .intro-text h2 {
     font-size: 1.5rem;
     line-height: 2.2rem;
   }
@@ -1405,112 +1464,112 @@ section .more-btn:hover .icon svg path {
   }
 }
 @media only screen and (max-width: 1280px) {
-  #intro .intro-text {
+  .desktop-view #intro .intro-text {
     position: absolute;
     left: 16%;
     bottom: 18%;
   }
-  .nav-sidebar.container {
+  .desktop-view .nav-sidebar.container {
     padding: 2rem 8rem;
   }
   .desktop-view #info .content h1 {
     font-size: 2.5rem;
+  }
+  .desktop-view .footer .footer-top .btn {
+    min-width: 240px;
   }
 }
 @media only screen and (max-width: 1024px) {
   .desktop-view #info .content h1 {
     font-size: 3em;
   }
-  #news .newslist {
+  .desktop-view #news .newslist {
     display: grid;
     grid-template-columns: 2fr 2fr;
     gap: 30px;
   }
-  #news .separator {
+  .desktop-view #news .separator {
     display: none;
   }
 }
 @media only screen and (max-width: 990px) {
-  #intro .intro-text {
-    position: absolute;
-    left: 21%;
-    bottom: 10%;
+  .desktop-view .nav-sidebar.container {
+    padding: 2rem 6rem;
+    padding-top: 15%;
+  }
+  .desktop-view .nav-sidebar.container .nav-content {
+    width: 20%;
+    border-radius: 10px;
+  }
+  .desktop-view .nav-sidebar.container .nav-content .video-wrap video {
+    border-radius: 20px;
   }
   .desktop-view .nav-sidebar.container .nav-list {
     width: 74%;
     height: 75%;
   }
-  .desktop-view .nav-sidebar.container {
-    padding: 2rem 6rem;
-    padding-top: 15%;
-  }
-  .desktop-view .nav-sidebar ul {
+  .desktop-view .nav-sidebar.container ul {
     height: auto;
   }
-  .desktop-view #info .content h1 {
-    font-size: 2.8rem;
-    margin: 0;
+  .desktop-view #project .content {
+    display: block;
   }
-  .desktop-view #info .content h1 .flow-rotate {
-    -o-object-fit: cover;
-    object-fit: cover;
-    margin-right: 24px;
-    width: 157px;
-    height: auto;
-  }
-  #project .content .project-img-wrap {
+  .desktop-view #project .content .project-img-wrap {
     margin: 20px 0;
   }
-  #project .content .content-r {
-    padding-left: 0px;
-  }
-  #project .content .content-r .more-btn {
-    width: 100%;
-  }
-  #project .content {
-    display: block;
-  }
-  #project .content .project-img-wrap {
-    width: 100%;
-    height: 400px;
-  }
-  #project .content .project-img-wrap img {
+  .desktop-view #project .content .project-img-wrap img {
     height: 100%;
   }
-  .blog-page .inner-box .blog-wrapper {
+  .desktop-view #project .content .content-r {
+    padding-left: 0px;
+  }
+  .desktop-view #project .content .content-r .more-btn {
     width: 100%;
   }
-  #news .newslist {
+  .desktop-view .blog-page .inner-box .blog-wrapper {
+    width: 100%;
+  }
+  .desktop-view #news .newslist {
     display: block;
   }
-  #news .newslist .new-item {
+  .desktop-view #news .newslist .new-item {
     max-width: 100%;
   }
-  #news .row .title {
-    font-size: 3.75rem;
-  }
-  #news .row .subtitle {
-    font-size: 1.5rem;
-  }
-  #news .newslist .new-item .pic img {
+  .desktop-view #news .newslist .new-item .pic img {
     height: 400px;
   }
-  #news .newslist .new-item {
+  .desktop-view #news .newslist .new-item {
     margin-bottom: 30px;
     border-bottom: 1px solid #d9d9d9;
   }
-  .footer .footer-top h1 {
-    font-size: 4.5rem;
+  .desktop-view #news .row .title {
+    font-size: 3.75rem;
   }
-  .footer .footer-bottom .contact {
+  .desktop-view #news .row .subtitle {
+    font-size: 1.5rem;
+  }
+  .desktop-view .footer .footer-top h1 {
+    font-size: 2.5rem;
+  }
+  .desktop-view .footer .footer-top .buttons {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .desktop-view .footer .footer-bottom .contact {
     width: 100%;
     margin: 20px 0;
   }
-  .footer .footer-bottom .nav-app {
+  .desktop-view .footer .footer-bottom .nav-app {
     width: 100%;
     margin: 15px 0;
   }
-  .footer .footer-bottom .footer-nav {
+  .desktop-view .footer .footer-bottom .footer-nav {
     gap: 10px 30px;
     flex-wrap: wrap;
   }
@@ -1520,31 +1579,33 @@ section .more-btn:hover .icon svg path {
   }
 }
 @media only screen and (max-width: 768px) {
-  #intro .intro-text {
+  .mobile-view #intro .intro-text {
     position: absolute;
     left: 5%;
   }
-  .nav-sidebar.container .nav-list li {
+  .mobile-view .nav-sidebar.container .nav-list li {
     padding-left: 0;
+    font-size: 5rem;
   }
-  .mobile-view #info .content h1 {
-    font-size: 2.8rem;
-    margin: 0;
-  }
-  .mobile-view #info .content h1 .flow-rotate {
-    -o-object-fit: cover;
-    object-fit: cover;
-    margin-right: 24px;
-    width: 207px;
-    height: auto;
-  }
-  .nav-sidebar .container .nav-list {
+  .mobile-view .nav-sidebar.container .nav-list {
     width: 74%;
     height: 80%;
     position: relative;
     top: 9%;
   }
 }
+.mobile-view #info .content h1 {
+  font-size: 2.8rem;
+  margin: 0;
+}
+.mobile-view #info .content h1 .flow-rotate {
+  -o-object-fit: cover;
+  object-fit: cover;
+  margin-right: 24px;
+  width: 207px;
+  height: auto;
+}
+
 @media only screen and (max-width: 500px) {
   .mobile-view #intro .intro-text {
     position: absolute;
@@ -1564,19 +1625,20 @@ section .more-btn:hover .icon svg path {
     line-height: 1.4rem;
     margin: 0;
   }
-  .mobile-view #info {
-    height: 480px;
-  }
   .mobile-view .nav-sidebar {
     padding: 0;
   }
   .mobile-view .nav-sidebar.container .nav-list {
     height: 80%;
     position: relative;
-    top: 10%;
+    top: 8%;
+    padding: 15% 0;
   }
   .mobile-view .nav-sidebar.container .nav-list li a {
     font-size: 1.5rem;
+  }
+  .mobile-view #info .content {
+    padding: 20px 30px;
   }
   .mobile-view #info .content .title {
     font-size: 30px;
@@ -1584,6 +1646,7 @@ section .more-btn:hover .icon svg path {
   .mobile-view #info .content h1 {
     font-size: 36px;
     line-height: 2rem;
+    width: 100%;
   }
   .mobile-view #info .content h1 .flow-rotate {
     width: 170px;
@@ -1613,27 +1676,30 @@ section .more-btn:hover .icon svg path {
     font-size: 2rem;
     line-height: 2rem;
   }
-  #service .section-top .services .service-wrapper .service-card.title-card .service-content .service-title {
+  .mobile-view #service .section-top .services .service-wrapper .service-card.title-card .service-content .service-title {
     font-size: 2.5rem;
     line-height: 2.5rem;
   }
-  #service .section-top .services .service-wrapper .service-card.title-card .service-content .service-subtitle {
+  .mobile-view #service .section-top .services .service-wrapper .service-card.title-card .service-content .service-subtitle {
     font-size: 1.2rem;
     opacity: 0.8;
   }
-  #service .section-top .services .service-wrapper .service-card:not(.title-card) .service-content .service-title {
+  .mobile-view #service .section-top .services .service-wrapper .service-card:not(.title-card) .service-content .service-title {
     font-size: 1rem;
   }
-  #service .section-top .services .service-wrapper .service-card:not(.title-card) .service-content .service-subtitle {
+  .mobile-view #service .section-top .services .service-wrapper .service-card:not(.title-card) .service-content .service-subtitle {
     font-size: 0.8rem;
   }
-  #service .section-top .services .service-wrapper .service-card:not(.title-card) .service-content .icon {
+  .mobile-view #service .section-top .services .service-wrapper .service-card:not(.title-card) .service-content .icon {
     right: 20px;
+  }
+  .mobile-view .footer .footer-top .content-box .content-text {
+    width: 70%;
   }
   .mobile-view .footer .footer-bottom {
     padding: 2rem 1rem;
   }
-  .footer .footer-bottom .footer-nav li {
+  .mobile-view .footer .footer-bottom .footer-nav li {
     font-size: 15px;
   }
 }/*# sourceMappingURL=style.css.map */

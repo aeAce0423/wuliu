@@ -89,6 +89,15 @@ const routes = [
             breadcrumbName: '連絡五六'
         }
     },
+    {
+        path: `/service1`,
+        component: () => import("./pages/service1.vue"),
+        name: "service1",
+        meta: {
+            breadcrumbName: 'service1'
+        }
+    },
+    
 ]
 
 //創建路徑並傳遞 本地
